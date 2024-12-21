@@ -18,3 +18,21 @@ print('py' 'thon')
 print("python "
       "language for programs")
 
+pref = 'py'
+print(pref + 'thon')
+
+word = "python"
+print(word[0:2])
+print(word[-1:-3])
+print(word[:3])
+print(word[0:])
+print(word[2:20])
+print(word[:30])
+print(word[:4] + word[4:])
+
+# word[0] = 'J' #error
+
+print('J' + word[1:])
+
+st = 'supercalifragilisticexpialidocious'
+print(len(st))
