@@ -18,7 +18,7 @@ parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
 # parrot(110, voltage=220)
 # parrot(actor="John Cleese")
 
-def cheeseshop(kind, *arguments, **keywords):
+def cheeseshop(kind, *arguments, **keywords): # * positional; ** keyword arguments
     print("-- Do you have any", kind, "?")
     print("-- I'm sorry, we're all out of", kind)
     for arg in arguments:
