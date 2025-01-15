@@ -29,3 +29,13 @@ kwd_only_arg(arg=3)
 combined_example(1, 2, kwd_only=3)
 combined_example(1, standard=2, kwd_only=3)
 # combined_example(pos_only=1, standard=2, kwd_only=3) # pos_only error
+
+
+def foo(name, /, **kwds):
+    return 'name' in kwds
+
+print(foo(1, **{'name': 2})) # return повертає значення name в словник kwds. / значить що елемент name є позиційним. функція print перевіряє чи є значення 'name' в словнику **kwds
+
+
+# def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2): # pos1, pos2 це позційні значення. pos_or_kwd це може бути і позиційні і ключові значення. kwd1, kwd2 це ключові значення
+
