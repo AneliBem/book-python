@@ -5,7 +5,7 @@ queue.append("Graham")
 
 print(queue)
 
-print(queue.popleft())
+print(queue.popleft()) # delete element with list on the left
 print(queue.popleft())
 
 print(queue)
